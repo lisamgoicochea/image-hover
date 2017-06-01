@@ -4,3 +4,36 @@
 	padding: 0;
 }
 
+.img-hover-container {
+	width: 50%;
+	margin: 20px auto;
+	position: relative;
+}
+
+.img-hover-container img {
+	width: 100%;
+	min-width: 300px;
+	margin: 20px auto;
+	position: relatives;
+}
+
+.img-hover-container p {
+	position: absolute;
+	width: 80%;
+	bottom: 10px;
+	left: 10px;
+	text-align: center;
+	padding: 10px;
+	color: #FFFFFF;
+	width: 80%;
+	opacity: 0;
+	transition: .5s;
+}
+
+.img-hover-container:hover img {
+	filter: brightness(50%);
+}
+
+.img-hover-container:hover p {
+	opacity: 1;
+}
